@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Allerta&family=Annie+Use+Your+Telescope&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Allerta", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --background: #f5f5f5;
+  --background-l: #ffffff;
+  --color: #000000;
+  --color1: #1a1a1aaf;
+  --light-p: #9dc4c6;
+  --ultra-light-p: #d0dfe0;
+  --dark-p: #21c2cc;
+}
+.container {
+  background-color: var(--background);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  background-color: var(--background-l) !important;
+  width: 270px;
+  padding: 10px;
+  /* display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  height: 350px; */
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  background: #dbdbdb;
+  box-shadow:  12px 12px 24px #adadad,
+             -12px -12px 24px #ffffff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: 480px;
+}
+
+.output {
+	width: 100%;
+	height: 150px !important;
+	/* background-color: yellow; */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: stretch;
+}
+.previousNumberElement {
+   /* background-color: var(--color1); */
+   padding: 3px;
+   font-size: 12px !important;
+   color: var(--color);
+   height: 20px;
+   padding-right: 10px;
+	padding-left: 10px;
+	opacity: .4;
+	overflow: hidden;
+	text-align: right;
+}
+.currentNumberElement {
+	/* background-color: greenyellow; */
+	height: 40px;
+	color: var(--dark-p);
+	font-size: 1.4rem !important;
+	font-weight: 900;
+	/* padding-top: 5px; */
+	padding-right: 10px;
+	padding-left: 10px;
+	text-align: right;
+    overflow: hidden;
+}
+
+.buttons {
+  /* background-color: var(--color1); */
+  height: 280px !important;
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  padding: 10px;
+  
+}
+
+.btn_group_lg {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 20px;
+  padding-top: 10px;
+  grid-template-areas: "b1 b2 b3 b3";
+}
+button {
+  /*border-radius: 50%;
+  */padding: 0;
+  border-radius:20px;
+  /* border-radius: 20px; */
+  background: #dbdbdb;
+  box-shadow: 20px 19px 24px #adadadb6, -6px -6px 24px #ffffffaa;
+  border: none;
+  -webkit-border-radius:20px;
+  -moz-border-radius:20px;
+  -ms-border-radius:20px;
+  -o-border-radius:20px;
+  border: 1px solid #cacaca;
+}
+
+[btn-b1] {
+  grid-area: b1;
+}
+[btn-b2] {
+  grid-area: b2;
+}
+[btn-b3] {
+  grid-area: b3;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  /* background-color: var(--dark-p) !important; */
+}
+
+.btn-equalTo{
+	color: var(--background-l);
+	background: var(--dark-p);
+}
+.btn-operator {
+	color: var(--dark-p);
+	background: #fff;
+}
+
+.btn{
+	background-color: #fff;
+}
+
+.btn-clear {
+	color: var(--dark-p);
+}
+.btn-clearLast {
+	color: var(--dark-p);
+}
+
+.btn{
+    outline: none;
+}
